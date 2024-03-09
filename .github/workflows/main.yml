@@ -1,12 +1,14 @@
-name: Build C++ Project (Optional Testing Removed)
+name: Build C++ Project
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
       - name: Configure CMake
